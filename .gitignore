@@ -1,0 +1,65 @@
+## ================================
+## WPF / .NET 8 / Visual Studio
+## ================================
+
+# Build eredmények
+bin/
+obj/
+out/
+
+# Publish / deploy mappák
+*.publish/
+*.vs/
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.iobj
+*.ipdb
+*.idb
+*.pdb
+*.mdb
+*.log
+
+# Visual Studio ideiglenes fájlok
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.VC.db
+
+# Rider / VSCode ideiglenes fájlok
+.idea/
+.vscode/
+*.code-workspace
+
+# NuGet csomagok
+*.nupkg
+packages/
+
+# Node / npm (ha használsz frontendet)
+node_modules/
+npm-debug.log*
+
+# Rider IDE
+*.sln.iml
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# Egyéb temp fájlok
+*.tmp
+*.temp
+*.cache
+*.bak
+*.swp
+*.DS_Store
+
+# SQL / LocalDB
+*.mdf
+*.ldf
+
+# Azure / publish profile
+*.Publish.xml
