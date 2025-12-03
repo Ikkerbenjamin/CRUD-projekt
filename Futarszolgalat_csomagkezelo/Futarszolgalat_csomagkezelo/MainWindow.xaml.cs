@@ -296,7 +296,7 @@ namespace WpfApp1
                     return;
                 }
 
-                // Csomag ID-t nem változtatjuk, az automatikusan generált marad
+            
                 selectedPackage.SenderName = SenderTextBox.Text;
                 selectedPackage.RecipientName = RecipientTextBox.Text;
                 selectedPackage.Address = AddressTextBox.Text;
