@@ -6,7 +6,6 @@
         Background="White">
 
     <Window.Resources>
-        <!-- Szín definíciók -->
         <SolidColorBrush x:Key="PrimaryColor">#FF4A6DA7</SolidColorBrush>
         <SolidColorBrush x:Key="SecondaryColor">#FF6B8E23</SolidColorBrush>
         <SolidColorBrush x:Key="AccentColor">#FFD4A017</SolidColorBrush>
@@ -156,7 +155,6 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <!-- Header Section -->
         <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" 
                 Background="{StaticResource PrimaryColor}" 
                 CornerRadius="8" 
@@ -179,14 +177,12 @@
             </Grid>
         </Border>
 
-        <!-- Main Content -->
         <Grid Grid.Column="0" Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <!-- Stats Panel -->
             <Border Grid.Row="0" Background="{StaticResource LightGray}" CornerRadius="6" Padding="15" Margin="0,0,0,15">
                 <StackPanel Orientation="Horizontal">
                     <Border Background="{StaticResource PrimaryColor}" CornerRadius="4" Padding="12,8" Margin="0,0,15,0">
@@ -201,7 +197,6 @@
                 </StackPanel>
             </Border>
 
-            <!-- Package List -->
             <Border Grid.Row="1" Background="White" BorderBrush="{StaticResource BorderColor}" BorderThickness="2" CornerRadius="8">
                 <Grid>
                     <Grid.RowDefinitions>
@@ -220,7 +215,6 @@
             </Border>
         </Grid>
 
-        <!-- Form Panel -->
         <Border Grid.Column="2" Grid.Row="1" 
                 Background="{StaticResource LightGray}" 
                 BorderBrush="{StaticResource BorderColor}" 
@@ -235,14 +229,12 @@
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
-                <!-- Form Header -->
                 <Border Grid.Row="0" Background="{StaticResource PrimaryColor}" CornerRadius="6" Padding="15,12" Margin="0,0,0,20">
                     <TextBlock x:Name="FormTitle" Text="➕ ÚJ CSOMAG FELVÉTELE" 
                               FontSize="16" FontWeight="Bold" 
                               Foreground="White" TextAlignment="Center"/>
                 </Border>
 
-                <!-- Form Content -->
                 <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
                     <StackPanel Orientation="Vertical">
                         <Grid>
@@ -294,7 +286,6 @@
                     </StackPanel>
                 </ScrollViewer>
 
-                <!-- Action Buttons -->
                 <StackPanel Grid.Row="2" Orientation="Vertical" Margin="0,20,0,0">
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
                         <Button x:Name="MarkDeliveredButton" Content="✅ KISZÁLLÍTVA" Style="{StaticResource SuccessButton}" 

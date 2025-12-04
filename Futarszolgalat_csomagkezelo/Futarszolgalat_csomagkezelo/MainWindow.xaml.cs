@@ -226,7 +226,6 @@ namespace WpfApp1
 
         private void ClearForm()
         {
-            // Automatikusan generált csomag ID
             int nextId = packages.Count > 0 ? packages.Max(p => p.Id) + 1 : 1;
             PackageIdTextBox.Text = $"CSM{DateTime.Now:yyMMdd}{nextId:D4}";
 
@@ -296,7 +295,7 @@ namespace WpfApp1
                     return;
                 }
 
-            
+
                 selectedPackage.SenderName = SenderTextBox.Text;
                 selectedPackage.RecipientName = RecipientTextBox.Text;
                 selectedPackage.Address = AddressTextBox.Text;
